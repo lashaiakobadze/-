@@ -1,0 +1,96 @@
+<head>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+ <div class="container">
+  <header class="header">
+    <h1 id="title">საბავშვო ოლიმპიადა ზარაზმა</h1>
+    <p id="description" class="description text-center">მადლობა,რომ დაინტერესდით ჩვენი შესარჩევი ოლიმპიადით</p>
+    </header>
+
+<form id="survey-form">
+  <div  class="form-group">
+    <label id="name-label" for="name">სახელი</label>
+    <input id="name" type="text" name="name" class="form-control" placeholder="შეიყვანეთ თქვენი სახელი" required/>
+  </div>
+
+  <div class="form-group"> 
+    <label id="name-label" for="name">გვარი</label>
+    <input id="name" type="text" name="name" class="form-control" placeholder="შეიყვანეთ თქვენი გვარი" required/>
+  </div>
+
+  <div class="form-group">
+    <label id="email-label" for="email">Email</label>
+    <input id="email" type="email" name="email" class="form-control" placeholder="შეიყვანეთ თქვენი email" required/>  
+  </div>
+
+  <div class="form-group">
+    <label id="number-label" for="number">კლასი<span class="clue">(ასარჩევი)</span></label>
+    <input id="number" type="number" name="age" min=3 max=11 class="form-control" placeholder="კლასი" /input>
+  </div>
+
+  <div class="form-group">
+      <p>რომელ საგანზე გსურთ რეგისტრაცია?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>აირჩიეთ საგანი</option>
+        <option value="მათემატიკა">მათემატიკა</option>
+        <option value="ფიზიკა">ფიზიკა</option>
+        <option value="ინფორმატიკა">ინფორმატიკა</option>
+      </select>
+    </div>
+  <div class="form-group">
+    <p>გსურთ თუ არა შემოუერთდეთ ზარზმის საბავშვო აკადემიას?</p>
+    <label>
+      <input name="user-recomended"
+             type="radio"
+             value="დიახ"
+             class="input-radio"
+              checked />დიახ</label>
+    <label>
+      <input name="user-recomended"
+             type="radio"
+             value="არა"
+             class="input-radio"
+             checked />არა</label>
+  </div>
+
+  <div class="form-group">
+    <p>აირჩიეთ სკოლის ტიპი</p>
+    <label>
+      <input
+          name="prefer"
+          value="საჯარო"
+          type="checkbox"
+          class="input-checkbox"
+        />საჯარო</label>
+
+      <label>
+        <input
+          name="prefer"
+          value="კერძო"
+          type="checkbox"
+          class="input-checkbox"
+        />კერძო</label>
+  </div>
+
+  <div class="form-group">
+    <p> გაქვთ რაიმე კითხვა?</P>
+  <textarea id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="დაწერეთ თქვენი კითხვა აქ..."
+      ></textarea>
+  </div>
+
+  <div class="form-group">
+    <button type="submit" id="submit" class="submit-button">
+        მონაცემების წარდგენა
+      </button>
+  </div>
+</form>
+</div>
+
+<footer id="contact">
+  <p class="contact"><a href="https://web.facebook.com/%E1%83%96%E1%83%90%E1%83%A0%E1%83%96%E1%83%9B%E1%83%98%E1%83%A1-%E1%83%A1%E1%83%90%E1%83%91%E1%83%90%E1%83%95%E1%83%A8%E1%83%95%E1%83%9D-%E1%83%90%E1%83%99%E1%83%90%E1%83%93%E1%83%94%E1%83%9B%E1%83%98%E1%83%90-103977261199026"  target="_blank">Facebook</p></a>
+  <p class="contact"><a href="https://myaccount.google.com/u/3/?tab=kk" target="_blank">Email</p></a>
+  <p class="contact">Tele:+995 568 93 54 08</p>
+</footer>
